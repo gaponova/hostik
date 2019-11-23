@@ -15,10 +15,45 @@ img {
   height: auto;
 }
 
-/* svg {
+header {
+  position: relative;
+  background-image: url(../images/stunning-header-bg2.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #440ca3;
+  height: 100vh;
+}
+
+header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-image: url(../images/header-footer-gradient-bg.jpg);
+  background-size: contain;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search-icon{
   fill: rgb(207, 21, 21);
   width: 25px;
   height: 25px;
   z-index: 1;
-} */
+}
+
+.submenu-icon{
+  fill: rgb(33, 21, 207);
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+}
+
+.search-icon:hover,
+.submenu-icon:hover {
+  fill: rgb(7, 119, 82);
+}
 
