@@ -207,10 +207,10 @@ header::before {
   border-bottom: 20px solid #8ad524;
 }
 
-.slick-dots li.slick-active button:before {
+/* .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
-}
+} */
 
 .slick-dots li button:before {
   position: absolute;
@@ -223,6 +223,167 @@ header::before {
   color: black;
 }
 
-/* .slick-active {
-  border-bottom-width: 20px;
-} */
+
+
+
+
+.slick-dots li:nth-child(1).slick-active {
+  background-color: #6419ff;
+}
+
+.slick-dots li:nth-child(2).slick-active {
+  background-color: #ff0173;
+}
+
+.slick-dots li:nth-child(3).slick-active {
+  background-color: #ff8a0b;
+}
+
+.slick-dots li:nth-child(4).slick-active {
+  background-color: #ffd200;
+}
+
+.slick-dots li:nth-child(5).slick-active {
+  background-color: #00c6ff;
+}
+
+.slick-dots li:nth-child(6).slick-active {
+  background-color: #8ad524;
+}
+
+.slick-dots li:nth-child(1) button:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  content: 'WORDPRESS';
+  font: 14px 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  transition: 0.3s;
+  opacity: .4;
+}
+
+.slick-dots li:nth-child(2) button:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  content: 'SHARED HOSTING';
+  font: 14px 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  transition: 0.3s;
+  opacity: .4;
+}
+
+.slick-dots li:nth-child(3) button:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  content: 'VPS HOSTING';
+  font: 14px 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  transition: 0.3s;
+  opacity: .4;
+}
+
+.slick-dots li:nth-child(4) button:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  content: 'DEDICATED SERVER';
+  font: 14px 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  transition: 0.3s;
+  opacity: .4;
+}
+
+.slick-dots li:nth-child(5) button:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  content: 'CLOUD HOSTING';
+  font: 14px 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  transition: 0.3s;
+  opacity: .4;
+}
+
+.slick-dots li:nth-child(6) button:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  content: 'DOMAINS';
+  font: 14px 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  transition: 0.3s;
+  opacity: .4;
+}
+
+.slick-dots li:nth-child(1):hover button:before {
+  top: -40px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.slick-dots li:nth-child(2):hover button:before {
+  top: -40px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.slick-dots li:nth-child(3):hover button:before {
+  top: -40px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.slick-dots li:nth-child(4):hover button:before {
+  top: -40px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.slick-dots li:nth-child(5):hover button:before {
+  top: -40px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.slick-dots li:nth-child(6):hover button:before {
+  top: -40px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.slick-active #slick-slide-control00:before,
+.slick-active #slick-slide-control01:before,
+.slick-active #slick-slide-control02:before,
+.slick-active #slick-slide-control03:before,
+.slick-active #slick-slide-control04:before,
+.slick-active #slick-slide-control05:before  {
+  top: -40px;
+  transition: 0.3s;
+  opacity: 1;
+}
