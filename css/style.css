@@ -17,7 +17,6 @@ img {
 
 header {
   position: relative;
-  background-image: url(../images/stunning-header-bg2.jpg);
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,6 +35,12 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
+}
+
+.header-bar {
+  position: fixed;
+  z-index: 1;
 }
 
 .search-icon{
@@ -57,3 +62,167 @@ header::before {
   fill: rgb(7, 119, 82);
 }
 
+/*----------Стили для слайдера---------*/
+
+.header-slide-1 {
+  background-image: url(../images/stunning-header-bg2.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 0;
+}
+
+.header-slide-2 {
+  background-image: url(../images/stunning-header-bg3.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 0;
+}
+
+.header-slide-3 {
+  background-image: url(../images/stunning-header-bg4.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 0;
+}
+
+.header-slide-4 {
+  background-image: url(../images/stunning-header-bg5.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 0;
+}
+
+.header-slide-5 {
+  background-image: url(../images/stunning-header-bg6.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 0;
+}
+
+.header-slide-6 {
+  background-image: url(../images/stunning-header-bg7.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 0;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 10;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 12%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 10px solid #fff829;
+  transition: 0.3s;
+}
+
+.slick-dots li:nth-child(1),
+.slick-dots li:nth-child(1) {
+  border-bottom: 10px solid #6419ff;
+}
+
+.slick-dots li:nth-child(1):hover {
+  border-bottom: 20px solid #6419ff;
+}
+
+.slick-dots li:nth-child(2) {
+  border-bottom: 10px solid #ff0173;
+}
+
+.slick-dots li:nth-child(2):hover {
+  border-bottom: 20px solid #ff0173;
+}
+
+.slick-dots li:nth-child(3) {
+  border-bottom: 10px solid #ff8a0b;
+}
+
+.slick-dots li:nth-child(3):hover {
+  border-bottom: 20px solid #ff8a0b;
+}
+
+.slick-dots li:nth-child(4) {
+  border-bottom: 10px solid #ffd200;
+}
+
+.slick-dots li:nth-child(4):hover {
+  border-bottom: 20px solid #ffd200;
+}
+
+.slick-dots li:nth-child(5) {
+  border-bottom: 10px solid #00c6ff;
+}
+
+.slick-dots li:nth-child(5):hover {
+  border-bottom: 20px solid #00c6ff;
+}
+
+.slick-dots li:nth-child(6) {
+  border-bottom: 10px solid #8ad524;
+}
+
+.slick-dots li:nth-child(6):hover {
+  border-bottom: 20px solid #8ad524;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: '';
+  text-align: center;
+  color: black;
+}
+
+/* .slick-active {
+  border-bottom-width: 20px;
+} */
