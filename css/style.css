@@ -40,17 +40,64 @@ header::before {
 
 .header-bar {
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 4px;
+  padding: 25px 0;
   z-index: 1;
 }
 
-.search-icon{
+.header-bar__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.header-bar__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.main-nav {
+
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list__item {
+
+}
+
+.nav-list__link {
+  font: 14px 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  padding: 23px 13px;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.nav-list__link:hover {
+  opacity: 1;
+}
+
+.search-icon {
   fill: rgb(207, 21, 21);
   width: 25px;
   height: 25px;
   z-index: 1;
 }
 
-.submenu-icon{
+.submenu-icon {
   fill: rgb(33, 21, 207);
   width: 25px;
   height: 25px;
@@ -158,7 +205,6 @@ header::before {
   transition: 0.3s;
 }
 
-.slick-dots li:nth-child(1),
 .slick-dots li:nth-child(1) {
   border-bottom: 10px solid #6419ff;
 }
@@ -382,7 +428,7 @@ header::before {
 .slick-active #slick-slide-control02:before,
 .slick-active #slick-slide-control03:before,
 .slick-active #slick-slide-control04:before,
-.slick-active #slick-slide-control05:before  {
+.slick-active #slick-slide-control05:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
