@@ -144,6 +144,8 @@ header::before {
 
 /*----------Стили для слайдера---------*/
 
+/*----------Первый слайд хедера----------*/
+
 .header-slide-1 {
   background-image: url(../images/stunning-header-bg2.jpg);
   width: 100%;
@@ -190,8 +192,8 @@ header::before {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-size:14px;
-  font-weight:700;
+  font-size: 14px;
+  font-weight: 700;
   background-color: #0260E8;
   padding: 18px 45px;
   border-radius: 50px;
@@ -203,8 +205,27 @@ header::before {
 }
 
 .btn_pink {
-  background-color:#ff0173;
+  background-color: #ff0173;
 }
+
+.btn_orange {
+  background-color: #ff8a0b;
+}
+
+.btn_yellow {
+  background-color: #ffd200;
+  color: #000;
+}
+
+.btn_black {
+  background-color: #272a2c;
+}
+
+.btn_green {
+  background-color: #8ad524;
+}
+
+/*----------Второй слайд хедера----------*/
 
 .header-slide-2 {
   background-image: url(../images/stunning-header-bg3.jpg);
@@ -215,6 +236,35 @@ header::before {
   outline: 0;
 }
 
+.row-slide2,
+.row-slide3,
+.row-slide4,
+.row-slide5,
+.row-slide6 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 15px;
+}
+
+.slide-info {
+  width: calc(100% / 12 * 6);
+}
+
+.slide-img {
+  width: calc(100% / 12 * 6);
+}
+
+/*----------Третий слайд хедера----------*/
+
 .header-slide-3 {
   background-image: url(../images/stunning-header-bg4.jpg);
   width: 100%;
@@ -224,6 +274,8 @@ header::before {
   outline: 0;
 }
 
+/*----------Четвёртый слайд хедера----------*/
+
 .header-slide-4 {
   background-image: url(../images/stunning-header-bg5.jpg);
   width: 100%;
@@ -232,6 +284,8 @@ header::before {
   background-size: cover;
   outline: 0;
 }
+
+/*----------Пятый слайд хедера----------*/
 
 .header-slide-5 {
   background-image: url(../images/stunning-header-bg6.jpg);
@@ -261,7 +315,8 @@ header::before {
   z-index: 10;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-family: 'slick';
   font-size: 30px;
   line-height: 1;
@@ -523,10 +578,6 @@ header::before {
 }
 
 
-
-
-
-
 /*----------Кнопка для адаптивного меню----------*/
 
 .menuToggle {
@@ -537,16 +588,24 @@ header::before {
   cursor: pointer;
 }
 
-/*----------Адаптивная разметка----------*/
+/*----------Адаптив----------*/
 
-@media only screen and (min-width: 961px){
-  .main-nav{
+@media only screen and (max-width: 1370px) {
+
+  #img-slide1 {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+
+  .main-nav {
     display: block !important;
   }
 }
 
 @media screen and (max-width: 960px) {
- 
+
   .main-nav {
     display: none;
     position: absolute;
@@ -589,7 +648,7 @@ header::before {
   }
 
   .header-bar__container {
-   
+
     padding-top: 5px;
   }
 
@@ -605,7 +664,7 @@ header::before {
   .slick-prev {
     display: none;
   }
-  
+
   .slick-next {
     display: none;
   }
