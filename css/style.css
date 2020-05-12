@@ -188,6 +188,8 @@ header::before {
   margin-bottom: 20px;
 }
 
+/*----------Кнопки----------*/
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -202,27 +204,58 @@ header::before {
 
 .btn_blue {
   background-color: #00c6ff;
+  transition: 0.3s;
 }
 
 .btn_pink {
   background-color: #ff0173;
+  transition: 0.3s;
 }
 
 .btn_orange {
   background-color: #ff8a0b;
+  transition: 0.3s;
 }
 
 .btn_yellow {
   background-color: #ffd200;
+  transition: 0.3s;
   color: #000;
 }
 
 .btn_black {
   background-color: #272a2c;
+  transition: 0.3s;
 }
 
 .btn_green {
   background-color: #8ad524;
+  transition: 0.3s;
+}
+
+.btn_blue:hover {
+  background-color: #009ecc;
+}
+
+.btn_pink:hover {
+  background-color: #cd005c;
+}
+
+.btn_orange:hover {
+  background-color: #d77000;
+}
+
+.btn_yellow:hover {
+  background-color: #cca800;
+  color: #000;
+}
+
+.btn_black:hover {
+  background-color: #1d1f20;
+}
+
+.btn_green:hover {
+  background-color: #6ea91d;
 }
 
 /*----------Второй слайд хедера----------*/
@@ -296,6 +329,8 @@ header::before {
   outline: 0;
 }
 
+/*----------Шестой слайд хедера----------*/
+
 .header-slide-6 {
   background-image: url(../images/stunning-header-bg7.jpg);
   width: 100%;
@@ -304,6 +339,8 @@ header::before {
   background-size: cover;
   outline: 0;
 }
+
+/*----------Навигация слайдера в хедере----------*/
 
 .slick-prev {
   left: 100px;
@@ -334,7 +371,6 @@ header::before {
   list-style: none;
   text-align: center;
 }
-
 
 .slick-dots li {
   position: relative;
@@ -411,10 +447,6 @@ header::before {
   text-align: center;
   color: black;
 }
-
-
-
-
 
 .slick-dots li:nth-child(1).slick-active {
   background-color: #6419ff;
@@ -578,7 +610,14 @@ header::before {
 }
 
 
-/*----------Кнопка для адаптивного меню----------*/
+/*----------Стили для блока starts----------*/
+
+
+
+
+
+
+
 
 .menuToggle {
   display: none;
@@ -593,7 +632,7 @@ header::before {
 @media only screen and (max-width: 1370px) {
 
   #img-slide1 {
-    width: 90%;
+    width: 50%;
   }
 }
 
