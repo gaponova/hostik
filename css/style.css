@@ -16,8 +16,9 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* .row {
@@ -612,12 +613,110 @@ header::before {
 
 /*----------Стили для блока starts----------*/
 
+.starts {
+  background-color: #ebf2f8;
+  padding-top: 60px;
+  padding-bottom: 60px;;
+}
 
+.row-starts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin : 0 -15px;
+}
 
+.starts-item_title {
+  width: calc(100% / 12 * 4 - 30px);
+  margin: 0 15px;
+}
 
+.starts-item_search {
+  width: calc(100% / 12 * 8  - 30px);
+  margin: 0 15px;
+}
 
+.starts-title {
+  margin: 0;
+}
 
+.starts-title {
+  font-size: 30px;
+  line-height: 1.3em;
+  font-weight: 700;
+  color: #272a2c;
+}
 
+.start-form {
+  position: relative;
+}
+
+.search-field {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+} 
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #6419ff;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  padding: 20px 40px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.search-domain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px -15px 0;
+}
+
+.domain-item {
+  margin: 0 15px;
+}
+
+.search-domain__name_one {
+  font-size: 24px;
+  font-weight: 900;
+  color: #0072bc;
+}
+
+.search-domain__name_two {
+  font-size: 24px;
+  font-weight: 900;
+  color: #272a2c;
+}
+
+.search-domain__name_three {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ff8a0b;
+}
+
+.search-domain__name_four {
+  font-size: 24px;
+  font-weight: 900;
+  color: #8d9cab;
+}
+
+.search-domain__price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #43484e;
+  margin-left: 10px;
+}
 
 .menuToggle {
   display: none;
@@ -630,6 +729,14 @@ header::before {
 /*----------Адаптив----------*/
 
 @media only screen and (max-width: 1370px) {
+
+  .row-slide2,
+  .row-slide3,
+  .row-slide4,
+  .row-slide5,
+  .row-slide6 {
+    width: 75%;
+}
 
   #img-slide1 {
     width: 50%;
