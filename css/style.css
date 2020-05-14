@@ -718,6 +718,64 @@ header::before {
   margin-left: 10px;
 }
 
+/*----------Стили для блока power----------*/
+
+.power {
+  background-color: #fff;
+  text-align: center;
+  padding: 120px 15px;
+  margin-bottom: 20px;
+}
+
+.power-info {
+  max-width: 760px;
+  margin: 0 auto 60px;
+}
+
+.power-title {
+  margin: 0;
+  color:#272a2c;
+  font-size:42px;
+  font-weight:700;
+  letter-spacing:-0.016px;
+  line-height:54px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.power-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.power-box__img {
+  margin-bottom: 30px;
+}
+
+.row-power {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin : 0 -15px;
+}
+
+.power-box {
+  margin: 0 15px;
+  width: calc(100% / 12 * 4 - 30px);
+}
+
+.power-box__title {
+  margin: 0;
+  font-size:24px;
+  font-weight:700;
+  margin-bottom: 30px;
+}
+
+.power-box__info {
+  margin: 0;
+}
+
 .menuToggle {
   display: none;
   position: absolute;
