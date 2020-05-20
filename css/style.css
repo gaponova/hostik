@@ -776,6 +776,134 @@ header::before {
   margin: 0;
 }
 
+/*----------Стили для секции why----------*/
+
+.why {
+  background-color: #ffd200;
+  padding: 120px 0;
+}
+
+.why-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.why-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.why-info {
+  width: calc(50% - 30px);
+  margin: 0 15px;
+}
+
+.whi-title {
+  margin: 0;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.why-subtitle {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.why-pic {
+  position: relative;
+  width: calc(50% - 30px);
+  margin: 15px;
+}
+
+/*----------Стили для accordion----------*/
+
+.faq {
+  
+}
+
+.faq-item {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.faq-item:hover {
+  background-color: #fff;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.14);
+}
+
+.faq-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  color: #272a2c;
+  padding: 25px 30px;
+  cursor: pointer;
+}
+
+.faq-input{
+  display: none;
+}
+
+.faq-text {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 30px;
+  transition: max-height 0.3s;
+}
+
+.faq-title .fa-minus {
+  display: none;
+}
+
+.faq-title .fa-plus,
+.faq-title .fa-minus {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.faq-input:checked ~ .faq-text {
+  max-height: 10rem;
+}
+
+.faq-input:checked ~ .faq-title {
+  background-color: #fff;
+}
+
+.faq-input:checked ~ .faq-title .fa-plus {
+  display: none;
+}
+
+.faq-input:checked ~ .faq-title .fa-minus {
+  display: block;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 30px;
+  transition: max-height 0.5s ease-in;
+}
+
+.answer-text {
+  margin:0;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+/*----------Кнопка адаптивного меню----------*/
+
 .menuToggle {
   display: none;
   position: absolute;
@@ -872,4 +1000,22 @@ header::before {
   .slick-next {
     display: none;
   }
+
+
+
+  .why {
+    text-align: center;
+  }
+    
+    .why-info {
+     width: calc(100% - 30px);
+   }
+    
+     .why-pic {
+     width: calc(100% - 30px);
+   }
+
+   .faq {
+     text-align: left;
+   }
 }
