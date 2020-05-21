@@ -902,13 +902,14 @@ header::before {
 .map {
   background-image: url(../images/bg-brown.png);
   background-repeat: no-repeat;
-  background-size: center center;
+  
   text-align: center;
   position: relative;
+  padding: 95px 15px;
 }
 
 .map-container {
-  padding: 120px 15px;
+  
 }
 
 .map-info {
@@ -932,6 +933,7 @@ header::before {
 
 .locations {
   position: relative;
+  margin-bottom: 50px;
 }
 
 .location-pin {
@@ -1181,10 +1183,25 @@ header::before {
   font-size: 14px;
 }
 
+.country {
+  max-width: 66%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.country-box__info {
+  display: block;
+  font-weight: 500;
+  color: #80868d;
+  margin: 15px 30px;
+}
 
-
-
+.country-box__info b {
+  color: white;
+  margin-left: 10px;
+}
 
 
 /*----------Кнопка адаптивного меню----------*/
