@@ -945,7 +945,23 @@ header::before {
   transition: all .3s ease;
 }
 
-.pin-1::before {
+.pin-2 {
+  position: absolute;
+  top: 13%;
+  left: 15%;
+  transition: all .3s ease;
+}
+
+.pin-3 {
+  position: absolute;
+  top: 24%;
+  left: 18%;
+  transition: all .3s ease;
+}
+
+.pin-1::before,
+.pin-2::before,
+.pin-3::before {
   content: "";
   display: block;
   width: 7px;
@@ -977,7 +993,17 @@ header::before {
   background-color: #ff0173;
 }
 
-.location-pin__tooltip_1 {
+.loction-pin__circle_yellow {
+  background-color: #ffd200;
+}
+
+.loction-pin__circle_orange {
+  background-color: #ff8a0b;
+}
+
+.location-pin__tooltip_1,
+.location-pin__tooltip_2,
+.location-pin__tooltip_3 {
   position: absolute;
   top: -100%;
   left: 38px;
@@ -993,7 +1019,11 @@ header::before {
 }
 
 .pin-1:hover .location-pin__tooltip_1,
-.pin-1:hover::before {
+.pin-1:hover::before,
+.pin-2:hover .location-pin__tooltip_2,
+.pin-2:hover::before,
+.pin-3:hover .location-pin__tooltip_3,
+.pin-3:hover::before {
   opacity: 1;
   visibility: visible;
 }
@@ -1008,6 +1038,12 @@ header::before {
   display: block;
   font-size: 14px;
 }
+
+
+
+
+
+
 
 /*----------Кнопка адаптивного меню----------*/
 
