@@ -959,9 +959,39 @@ header::before {
   transition: all .3s ease;
 }
 
+.pin-4 {
+  position: absolute;
+  top: 60%;
+  left: 22%;
+  transition: all .3s ease;
+}
+
+.pin-5 {
+  position: absolute;
+  top: 74%;
+  left: 27%;
+  transition: all .3s ease;
+}
+
+.pin-6 {
+  position: absolute;
+  top: 41%;
+  left: 46%;
+  transition: all .3s ease;
+}
+
+.pin-7 {
+  position: absolute;
+  top: 61%;
+  left: 54%;
+  transition: all .3s ease;
+}
+
 .pin-1::before,
 .pin-2::before,
-.pin-3::before {
+.pin-3::before,
+.pin-4::before,
+.pin-5::before {
   content: "";
   display: block;
   width: 7px;
@@ -975,6 +1005,24 @@ header::before {
   opacity: 0;
   visibility: hidden;
   transition: all .3s ease;
+}
+
+.pin-6::before,
+.pin-7::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  border-style: solid;
+  border-width: 6px 8px 6px 0;
+  border-color: transparent rgba(0, 0, 0, 0.6) transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  transform: rotate(180deg);
 }
 
 .loction-pin__circle {
@@ -1001,9 +1049,19 @@ header::before {
   background-color: #ff8a0b;
 }
 
+.loction-pin__circle_purple {
+  background-color: #6419ff;
+}
+
+.loction-pin__circle_blue {
+  background-color: #00c6ff;
+}
+
 .location-pin__tooltip_1,
 .location-pin__tooltip_2,
-.location-pin__tooltip_3 {
+.location-pin__tooltip_3,
+.location-pin__tooltip_4,
+.location-pin__tooltip_5 {
   position: absolute;
   top: -100%;
   left: 38px;
@@ -1016,6 +1074,24 @@ header::before {
   opacity: 0;
   visibility: hidden;
   transition: all .3s ease;
+  z-index: 100;
+}
+
+.location-pin__tooltip_6,
+.location-pin__tooltip_7 {
+  position: absolute;
+  top: -100%;
+  right: 38px;
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 15px 15px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  z-index: 100;
 }
 
 .pin-1:hover .location-pin__tooltip_1,
@@ -1023,7 +1099,19 @@ header::before {
 .pin-2:hover .location-pin__tooltip_2,
 .pin-2:hover::before,
 .pin-3:hover .location-pin__tooltip_3,
-.pin-3:hover::before {
+.pin-3:hover::before,
+.pin-4:hover .location-pin__tooltip_4,
+.pin-4:hover::before,
+.pin-5:hover .location-pin__tooltip_5,
+.pin-5:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pin-6:hover .location-pin__tooltip_6,
+.pin-6:hover::before,
+.pin-7:hover .location-pin__tooltip_7,
+.pin-7:hover::before {
   opacity: 1;
   visibility: visible;
 }
