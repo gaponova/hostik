@@ -986,6 +986,40 @@ header::before {
   left: 54%;
   transition: all .3s ease;
 }
+.pin-8 {
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  transition: all .3s ease;
+}
+
+.pin-9 {
+  position: absolute;
+  top: 25%;
+  left: 63%;
+  transition: all .3s ease;
+}
+
+.pin-10 {
+  position: absolute;
+  top: 10%;
+  left: 69%;
+  transition: all .3s ease;
+}
+
+.pin-11 {
+  position: absolute;
+  top: 14%;
+  left: 79%;
+  transition: all .3s ease;
+}
+
+.pin-12 {
+  position: absolute;
+  top: 76%;
+  left: 87%;
+  transition: all .3s ease;
+}
 
 .pin-1::before,
 .pin-2::before,
@@ -1008,7 +1042,12 @@ header::before {
 }
 
 .pin-6::before,
-.pin-7::before {
+.pin-7::before,
+.pin-8::before,
+.pin-9::before,
+.pin-10::before,
+.pin-11::before,
+.pin-12::before {
   content: "";
   display: block;
   width: 7px;
@@ -1078,7 +1117,12 @@ header::before {
 }
 
 .location-pin__tooltip_6,
-.location-pin__tooltip_7 {
+.location-pin__tooltip_7,
+.location-pin__tooltip_8,
+.location-pin__tooltip_9,
+.location-pin__tooltip_10,
+.location-pin__tooltip_11,
+.location-pin__tooltip_12 {
   position: absolute;
   top: -100%;
   right: 38px;
@@ -1111,7 +1155,17 @@ header::before {
 .pin-6:hover .location-pin__tooltip_6,
 .pin-6:hover::before,
 .pin-7:hover .location-pin__tooltip_7,
-.pin-7:hover::before {
+.pin-7:hover::before,
+.pin-8:hover .location-pin__tooltip_8,
+.pin-8:hover::before,
+.pin-9:hover .location-pin__tooltip_9,
+.pin-9:hover::before,
+.pin-10:hover .location-pin__tooltip_10,
+.pin-10:hover::before,
+.pin-11:hover .location-pin__tooltip_11,
+.pin-11:hover::before,
+.pin-12:hover .location-pin__tooltip_12,
+.pin-12:hover::before {
   opacity: 1;
   visibility: visible;
 }
