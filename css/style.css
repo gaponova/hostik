@@ -45,12 +45,40 @@ header::before {
 }
 
 .header-bar {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 4px;
+  top: 3px;
+  
   padding: 25px 0;
   z-index: 1;
+  transition: 0.5s;
+}
+
+.bar-fixed {
+  position: fixed;
+  
+  left: 0;
+  right: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  animation: fixedMenu 1s forwards;
+  transition: 0.5s;
+}
+
+@keyframes fixedMenu {
+  0% {
+   opacity: 0;
+  }
+
+  /* 50% {
+   height: 80px;
+  } */
+
+  100% {
+    opacity: 70px;
+  }
 }
 
 .header-bar__container {
@@ -64,7 +92,6 @@ header::before {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0 -15px; */
 }
 
 
@@ -902,10 +929,10 @@ header::before {
 .map {
   background-image: url(../images/bg-brown.png);
   background-repeat: no-repeat;
-  
+  background-size: cover;
   text-align: center;
   position: relative;
-  padding: 95px 15px;
+  padding: 120px 15px;
 }
 
 .map-container {
@@ -1277,7 +1304,7 @@ header::before {
     position: fixed;
     left: 0;
     right: 0;
-    top: 4px;
+    top: -4px;
     padding: 10px 0;
   }
 
