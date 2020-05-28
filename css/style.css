@@ -1243,7 +1243,7 @@ header::before {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 -15px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .price-info {
@@ -1288,6 +1288,144 @@ header::before {
 .price-btn__link:hover {
   color:#6419ff;
   border-color: #6419ff;
+}
+
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-box {
+  position: relative;
+  width: 20%;
+  padding: 60px;
+  text-align: center;
+}
+
+.price-box_light {
+  background-color: #fafcfd;
+}
+
+.price-box_dark {
+  background-color: #EBF2F8;
+}
+
+.price-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: 9;
+}
+
+.price-box:hover::after {
+  height: 100%;
+}
+
+.price-box_purple:hover .price-box__title,
+.price-box_purple:hover .price-rate {
+  color: #fff;
+}
+
+.price-box:hover .price-box__subtitle {
+  color: #fff;
+}
+
+.price-box:hover .price-box__link path {
+  fill: #fff;
+}
+
+.price-box_purple::after {
+  background-color: #6419ff;
+}
+
+.price-box_pink::after {
+  background-color: #ff0173;
+}
+
+.price-box_orange::after {
+  background-color: #ff8a0b;
+}
+
+.price-box_yellow::after {
+  background-color: #ffd200;
+}
+
+.price-box_blue::after {
+  background-color: #00c6ff;
+}
+
+.price-box__img,
+.price-box__title,
+.price-box__subtitle,
+.price-rate,
+.price-box__link {
+  position: relative;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.price-box__img {
+  margin-bottom: 30px;
+}
+
+.price-box__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #272a2c;
+  margin-bottom: 30px;
+}
+
+.price-box__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.price-rate {
+  margin-bottom: 30px;
+}
+
+.price-rate__title {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.price-rate__cost {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.price-box__link_purple path {
+  fill: #6419ff;
+  transition: 0.3s;
+}
+
+.price-box__link_pink path {
+  fill: #ff0173;
+  transition: 0.3s;
+}
+
+.price-box__link_orange path {
+  fill: #ff8a0b;
+  transition: 0.3s;
+}
+
+.price-box__link_yellow path {
+  fill: #ffd200;
+  transition: 0.3s;
+}
+
+.price-box__link_blue path {
+  fill: #00c6ff;
+  transition: 0.3s;
 }
   
 
