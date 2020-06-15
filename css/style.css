@@ -1515,6 +1515,10 @@ header::before {
   text-decoration: none;
 }
 
+.domain-list__link:hover {
+  color: #6419ff;
+}
+
 .actions {
 
 }
