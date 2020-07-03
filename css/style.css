@@ -1643,16 +1643,38 @@ header::before {
   opacity: 1;
 }
 
+/*----------Стили для секции clients---------*/
 
+.clients {
+  padding: 60px 0;
+}
 
-/* . {
+.clients-row {
+  margin: 0 -15px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients-list__link {
+  margin: 0 15px;
+  /* margin-bottom: 20px; */
+}
+
+.clients-list__img {
   filter: grayscale(100%);
+  opacity: .4;
   transition: 0.2s;
 }
 
-.:hover {
+.clients-list__img:hover {
   filter: grayscale(0%);
-} */
+  opacity: 1;
+}
 
 
 
