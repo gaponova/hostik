@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -372,18 +373,18 @@ header::before {
 
 /*----------Навигация слайдера в хедере----------*/
 
-.slick-prev {
+.header-slider .slick-prev {
   left: 100px;
   z-index: 10;
 }
 
-.slick-next {
+.header-slider .slick-next {
   right: 100px;
   z-index: 10;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.header-slider .slick-prev:before,
+.header-slider .slick-next:before {
   font-family: 'slick';
   font-size: 30px;
   line-height: 1;
@@ -391,7 +392,7 @@ header::before {
   color: white;
 }
 
-.slick-dots {
+.header-slider .slick-dots {
   position: absolute;
   bottom: 0;
   display: block;
@@ -402,7 +403,7 @@ header::before {
   text-align: center;
 }
 
-.slick-dots li {
+.header-slider .slick-dots li {
   position: relative;
   display: inline-block;
   width: 12%;
@@ -414,60 +415,55 @@ header::before {
   transition: 0.3s;
 }
 
-.slick-dots li:nth-child(1) {
+.header-slider .slick-dots li:nth-child(1) {
   border-bottom: 10px solid #6419ff;
 }
 
-.slick-dots li:nth-child(1):hover {
+.header-slider .slick-dots li:nth-child(1):hover {
   border-bottom: 20px solid #6419ff;
 }
 
-.slick-dots li:nth-child(2) {
+.header-slider .slick-dots li:nth-child(2) {
   border-bottom: 10px solid #ff0173;
 }
 
-.slick-dots li:nth-child(2):hover {
+.header-slider .slick-dots li:nth-child(2):hover {
   border-bottom: 20px solid #ff0173;
 }
 
-.slick-dots li:nth-child(3) {
+.header-slider .slick-dots li:nth-child(3) {
   border-bottom: 10px solid #ff8a0b;
 }
 
-.slick-dots li:nth-child(3):hover {
+.header-slider .slick-dots li:nth-child(3):hover {
   border-bottom: 20px solid #ff8a0b;
 }
 
-.slick-dots li:nth-child(4) {
+.header-slider .slick-dots li:nth-child(4) {
   border-bottom: 10px solid #ffd200;
 }
 
-.slick-dots li:nth-child(4):hover {
+.header-slider .slick-dots li:nth-child(4):hover {
   border-bottom: 20px solid #ffd200;
 }
 
-.slick-dots li:nth-child(5) {
+.header-slider .slick-dots li:nth-child(5) {
   border-bottom: 10px solid #00c6ff;
 }
 
-.slick-dots li:nth-child(5):hover {
+.header-slider .slick-dots li:nth-child(5):hover {
   border-bottom: 20px solid #00c6ff;
 }
 
-.slick-dots li:nth-child(6) {
+.header-slider .slick-dots li:nth-child(6) {
   border-bottom: 10px solid #8ad524;
 }
 
-.slick-dots li:nth-child(6):hover {
+.header-slider .slick-dots li:nth-child(6):hover {
   border-bottom: 20px solid #8ad524;
 }
 
-/* .slick-dots li.slick-active button:before {
-  opacity: .75;
-  color: black;
-} */
-
-.slick-dots li button:before {
+.header-slider .slick-dots li button:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -478,31 +474,31 @@ header::before {
   color: black;
 }
 
-.slick-dots li:nth-child(1).slick-active {
+.header-slider .slick-dots li:nth-child(1).slick-active {
   background-color: #6419ff;
 }
 
-.slick-dots li:nth-child(2).slick-active {
+.header-slider .slick-dots li:nth-child(2).slick-active {
   background-color: #ff0173;
 }
 
-.slick-dots li:nth-child(3).slick-active {
+.header-slider .slick-dots li:nth-child(3).slick-active {
   background-color: #ff8a0b;
 }
 
-.slick-dots li:nth-child(4).slick-active {
+.header-slider .slick-dots li:nth-child(4).slick-active {
   background-color: #ffd200;
 }
 
-.slick-dots li:nth-child(5).slick-active {
+.header-slider .slick-dots li:nth-child(5).slick-active {
   background-color: #00c6ff;
 }
 
-.slick-dots li:nth-child(6).slick-active {
+.header-slider .slick-dots li:nth-child(6).slick-active {
   background-color: #8ad524;
 }
 
-.slick-dots li:nth-child(1) button:before {
+.header-slider .slick-dots li:nth-child(1) button:before {
   position: absolute;
   top: -30px;
   left: 0;
@@ -517,7 +513,7 @@ header::before {
   opacity: .4;
 }
 
-.slick-dots li:nth-child(2) button:before {
+.header-slider .slick-dots li:nth-child(2) button:before {
   position: absolute;
   top: -30px;
   left: 0;
@@ -532,7 +528,7 @@ header::before {
   opacity: .4;
 }
 
-.slick-dots li:nth-child(3) button:before {
+.header-slider .slick-dots li:nth-child(3) button:before {
   position: absolute;
   top: -30px;
   left: 0;
@@ -547,7 +543,7 @@ header::before {
   opacity: .4;
 }
 
-.slick-dots li:nth-child(4) button:before {
+.header-slider .slick-dots li:nth-child(4) button:before {
   position: absolute;
   top: -30px;
   left: 0;
@@ -562,7 +558,7 @@ header::before {
   opacity: .4;
 }
 
-.slick-dots li:nth-child(5) button:before {
+.header-slider .slick-dots li:nth-child(5) button:before {
   position: absolute;
   top: -30px;
   left: 0;
@@ -577,7 +573,7 @@ header::before {
   opacity: .4;
 }
 
-.slick-dots li:nth-child(6) button:before {
+.header-slider .slick-dots li:nth-child(6) button:before {
   position: absolute;
   top: -30px;
   left: 0;
@@ -592,48 +588,48 @@ header::before {
   opacity: .4;
 }
 
-.slick-dots li:nth-child(1):hover button:before {
+.header-slider .slick-dots li:nth-child(1):hover button:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
 }
 
-.slick-dots li:nth-child(2):hover button:before {
+.header-slider .slick-dots li:nth-child(2):hover button:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
 }
 
-.slick-dots li:nth-child(3):hover button:before {
+.header-slider .slick-dots li:nth-child(3):hover button:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
 }
 
-.slick-dots li:nth-child(4):hover button:before {
+.header-slider .slick-dots li:nth-child(4):hover button:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
 }
 
-.slick-dots li:nth-child(5):hover button:before {
+.header-slider .slick-dots li:nth-child(5):hover button:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
 }
 
-.slick-dots li:nth-child(6):hover button:before {
+.header-slider .slick-dots li:nth-child(6):hover button:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
 }
 
-.slick-active #slick-slide-control00:before,
-.slick-active #slick-slide-control01:before,
-.slick-active #slick-slide-control02:before,
-.slick-active #slick-slide-control03:before,
-.slick-active #slick-slide-control04:before,
-.slick-active #slick-slide-control05:before {
+.header-slider .slick-active #slick-slide-control00:before,
+.header-slider .slick-active #slick-slide-control01:before,
+.header-slider .slick-active #slick-slide-control02:before,
+.header-slider .slick-active #slick-slide-control03:before,
+.header-slider .slick-active #slick-slide-control04:before,
+.header-slider .slick-active #slick-slide-control05:before {
   top: -40px;
   transition: 0.3s;
   opacity: 1;
@@ -1519,23 +1515,146 @@ header::before {
   color: #6419ff;
 }
 
-.actions {
-
-}
-
 .btn-search,
 .btn-transfer {
   border: none;
   outline: none;
 }
 
-
-
 .actions__link {
   color: #fff;
   text-decoration: none;
 }
   
+/*----------Стили для секции say---------*/
+
+.say {
+  background-image: url(../images/section-bg2.png);
+  position: relative;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 15px 180px;
+}
+
+.say-title {
+  max-width: 66%;
+  margin: 0 auto;
+  color: rgb(39, 42, 44);
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.016px;
+  line-height: 54px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.say-subtitle {
+  max-width: 66%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.say-row {
+  margin-right: -30px;
+}
+
+.say-slider__slide {
+  margin-right: 20px;
+}
+
+.say-slider__text {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(39, 42, 44);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 40px;
+  box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.say-slider__text::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.author-info {
+  display: flex;
+  margin-left: 130px;
+  align-items: center;
+}
+
+.author-avatar {
+  margin-right: 20px;
+}
+
+.author-name {
+  max-width: 200px;
+}
+
+.author-name__link {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #272a2c;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.author-name__link:hover {
+  color: #6419ff;
+}
+
+.author-name__info {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.say-slider .slick-dots {
+  bottom: -100px;
+}
+
+.say-slider .slick-dots li button:before {
+  background-color:#0088ad;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.say-slider .slick-dots li.slick-active button:before,
+.say-slider .slick-dots li:hover button:before {
+  opacity: 1;
+}
+
+
+
+/* . {
+  filter: grayscale(100%);
+  transition: 0.2s;
+}
+
+.:hover {
+  filter: grayscale(0%);
+} */
+
+
 
 /*----------Кнопка адаптивного меню----------*/
 
