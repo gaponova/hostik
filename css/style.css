@@ -68,7 +68,7 @@ header::before {
 
 @keyframes fixedMenu {
   0% {
-   opacity: 0;
+    opacity: 0;
   }
 
   /* 50% {
@@ -310,7 +310,7 @@ header::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -641,7 +641,8 @@ header::before {
 .starts {
   background-color: #ebf2f8;
   padding-top: 60px;
-  padding-bottom: 60px;;
+  padding-bottom: 60px;
+  ;
 }
 
 .row-starts {
@@ -649,7 +650,7 @@ header::before {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin : 0 -15px;
+  margin: 0 -15px;
 }
 
 .starts-item_title {
@@ -658,7 +659,7 @@ header::before {
 }
 
 .starts-item_search {
-  width: calc(100% / 12 * 8  - 30px);
+  width: calc(100% / 12 * 8 - 30px);
   margin: 0 15px;
 }
 
@@ -684,7 +685,7 @@ header::before {
   outline: none;
   border: none;
   border-radius: 50px;
-} 
+}
 
 .search-btn {
   position: absolute;
@@ -764,11 +765,11 @@ header::before {
 
 .power-title {
   margin: 0;
-  color:#272a2c;
-  font-size:42px;
-  font-weight:700;
-  letter-spacing:-0.016px;
-  line-height:54px;
+  color: #272a2c;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.016px;
+  line-height: 54px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -787,7 +788,7 @@ header::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin : 0 -15px;
+  margin: 0 -15px;
 }
 
 .power-box {
@@ -797,8 +798,8 @@ header::before {
 
 .power-box__title {
   margin: 0;
-  font-size:24px;
-  font-weight:700;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -852,9 +853,7 @@ header::before {
 
 /*----------Стили для accordion----------*/
 
-.faq {
-  
-}
+.faq {}
 
 .faq-item {
   border: 2px solid #fff;
@@ -879,7 +878,7 @@ header::before {
   cursor: pointer;
 }
 
-.faq-input{
+.faq-input {
   display: none;
 }
 
@@ -901,19 +900,19 @@ header::before {
   font-weight: 300;
 }
 
-.faq-input:checked ~ .faq-text {
+.faq-input:checked~.faq-text {
   max-height: 10rem;
 }
 
-.faq-input:checked ~ .faq-title {
+.faq-input:checked~.faq-title {
   background-color: #fff;
 }
 
-.faq-input:checked ~ .faq-title .fa-plus {
+.faq-input:checked~.faq-title .fa-plus {
   display: none;
 }
 
-.faq-input:checked ~ .faq-title .fa-minus {
+.faq-input:checked~.faq-title .fa-minus {
   display: block;
 }
 
@@ -926,7 +925,7 @@ header::before {
 }
 
 .answer-text {
-  margin:0;
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 25px;
@@ -952,8 +951,8 @@ header::before {
 
 .map-info__title {
   margin: 0;
-  font-size:42px;
-  font-weight:700;
+  font-size: 42px;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -1020,6 +1019,7 @@ header::before {
   left: 54%;
   transition: all .3s ease;
 }
+
 .pin-8 {
   position: absolute;
   top: 19%;
@@ -1256,11 +1256,11 @@ header::before {
 
 .price-info__title {
   margin: 0;
-  color:#272a2c;
-  font-size:42px;
-  font-weight:700;
-  letter-spacing:-0.016px;
-  line-height:54px;
+  color: #272a2c;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.016px;
+  line-height: 54px;
   text-transform: uppercase;
 }
 
@@ -1289,7 +1289,7 @@ header::before {
 }
 
 .price-btn__link:hover {
-  color:#6419ff;
+  color: #6419ff;
   border-color: #6419ff;
 }
 
@@ -1479,7 +1479,7 @@ header::before {
 
 .domain-list {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -1525,7 +1525,7 @@ header::before {
   color: #fff;
   text-decoration: none;
 }
-  
+
 /*----------Стили для секции say---------*/
 
 .say {
@@ -1629,7 +1629,7 @@ header::before {
 }
 
 .say-slider .slick-dots li button:before {
-  background-color:#0088ad;
+  background-color: #0088ad;
   font-size: 0;
   width: 15px;
   height: 15px;
@@ -1676,6 +1676,53 @@ header::before {
   opacity: 1;
 }
 
+/*----------Стили для секции latest ---------*/
+
+.latest {}
+
+.container {}
+
+.latest-row {}
+
+.latest-box {}
+
+.box-illustration {}
+
+.box-illustration__ill {}
+
+.box-illustration__img {}
+
+.box-illustration__-links {}
+
+.mini-link {}
+
+.subtitle-link {}
+
+.box-illustration__info {}
+
+.box-illustration__info-desc {}
+
+.box-illustration__info-link {}
+
+.box-icon {}
+
+.box-icon__img {}
+
+.box-icon__upp {}
+
+.box-icon__down {}
+
+.box-pic {}
+
+.box-pic__link1 {}
+
+.box-pic__img {}
+
+.box-pic__link2 {}
+
+.link-blue {}
+
+
 
 
 /*----------Кнопка адаптивного меню----------*/
@@ -1698,7 +1745,7 @@ header::before {
   .row-slide5,
   .row-slide6 {
     width: 75%;
-}
+  }
 
   #img-slide1 {
     width: 50%;
@@ -1782,16 +1829,16 @@ header::before {
   .why {
     text-align: center;
   }
-    
-    .why-info {
-     width: calc(100% - 30px);
-   }
-    
-     .why-pic {
-     width: calc(100% - 30px);
-   }
 
-   .faq {
-     text-align: left;
-   }
+  .why-info {
+    width: calc(100% - 30px);
+  }
+
+  .why-pic {
+    width: calc(100% - 30px);
+  }
+
+  .faq {
+    text-align: left;
+  }
 }
