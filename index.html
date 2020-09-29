@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>HOSTIK</title>
+
 </head>
 
 <body>
@@ -937,56 +938,63 @@
 
     <footer>
       <div class="container">
-        <div class="footer-row">
-          <div class="footer-nav">
-            <div class="hosting">
-              <ul class="hosting-list">
-                <li class="hosting-list__item"><a class="hosting-list__link" href="#">WordPress</a></li>
-                <li class="hosting-list__item"><a class="hosting-list__link" href="#">Shared Hosting</a></li>
-                <li class="hosting-list__item"><a class="hosting-list__link" href="#">VPS Hosting</a></li>
-                <li class="hosting-list__item"><a class="hosting-list__link" href="#">Dedicated Server</a></li>
-                <li class="hosting-list__item"><a class="hosting-list__link" href="#">Cloud Hosting</a></li>
-              </ul>
+
+        <div class="footer-nav footer-row">
+          <div class="nav-box hosting">
+            <h3 class="nav-box__title">Hosting</h3>
+            <ul class="hosting-list">
+              <li class="hosting-list__item"><a class="hosting-list__link" href="#">WordPress </a></li>
+              <li class="hosting-list__item"><a class="hosting-list__link" href="#">Shared Hosting</a></li>
+              <li class="hosting-list__item"><a class="hosting-list__link" href="#">VPS Hosting</a></li>
+              <li class="hosting-list__item"><a class="hosting-list__link" href="#">Dedicated Server</a></li>
+              <li class="hosting-list__item"><a class="hosting-list__link" href="#">Cloud Hosting</a></li>
+            </ul>
+          </div>
+          <div class="nav-box domains">
+            <h3 class="nav-box__title">Domains</h3>
+            <ul class="domains-list">
+              <li class="domains-list__item"><a class="domains-list__link" href="#">Register Domains</a></li>
+              <li class="domains-list__item"><a class="domains-list__link" href="#">Transfer Domains</a></li>
+              <li class="domains-list__item"><a class="domains-list__link" href="#">Manage Domains</a></li>
+            </ul>
+          </div>
+          <div class="nav-box company">
+            <h3 class="nav-box__title">Company</h3>
+            <ul class="company-list">
+              <li class="company-list__item"><a class="company-list__link" href="#">About Us</a></li>
+              <li class="company-list__item"><a class="company-list__link" href="#">Support</a></li>
+              <li class="company-list__item"><a class="company-list__link" href="#">Blog</a></li>
+              <li class="company-list__item"><a class="company-list__link" href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="nav-box hostik-info">
+            <div class="logo">
+              <a href="#"><img src="images/logo-white.png" alt="logo"></a>
             </div>
-            <div class="domains">
-              <ul class="domains-list">
-                <li class="domains-list__item"><a class="domains-list__link" href="#">Register Domains</a></li>
-                <li class="domains-list__item"><a class="domains-list__link" href="#">Transfer Domains</a></li>
-                <li class="domains-list__item"><a class="domains-list__link" href="#">Manage Domains</a></li>
+            <p class="hostik-info__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt.</p>
+            <div class="socials">
+              <ul class="socials-list">
+                <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/facebook.png"
+                      alt="facebook"></a></li>
+                <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/twitter.png"
+                      alt="twitter"></a></li>
+                <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/google.png"
+                      alt="google"></a></li>
+                <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/youtube.png"
+                      alt="youtube"></a>
+                </li>
+                <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/rss.png"
+                      alt="rss"></a>
+                </li>
               </ul>
-            </div>
-            <div class="company">
-              <ul class="company-list">
-                <li class="company-list__item"><a class="company-list__link" href="#">About Us</a></li>
-                <li class="company-list__item"><a class="company-list__link" href="#">Support</a></li>
-                <li class="company-list__item"><a class="company-list__link" href="#">Blog</a></li>
-                <li class="company-list__item"><a class="company-list__link" href="#">Contacts</a></li>
-              </ul>
-            </div>
-            <div class="hostik-info">
-              <div class="logo">
-                <a href="#"><img src="images/logo-white.png" alt="logo"></a>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-              <div class="socials">
-                <ul class="socials-list">
-                  <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/facebook.png"
-                        alt="facebook"></a></li>
-                  <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/twitter.png"
-                        alt="twitter"></a></li>
-                  <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/google.png"
-                        alt="google"></a></li>
-                  <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/youtube.png"
-                        alt="youtube"></a>
-                  </li>
-                  <li class="socials-list__item"><a class="socials-list__link" href="#"><img src="images/rss.png"
-                        alt="rss"></a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
-          <div class="subscribe">
+        </div>
+      </div>
+      <div class="subscribe">
+        <div class="container">
+          <div class="subscribe-row">
             <div class="subscribe__title">
               <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
             </div>
@@ -995,15 +1003,18 @@
             </div>
             <form class="subscribe__email" action="#">
               <input class="subscribe__input" type="email" placeholder="Choose your new web address…">
-              <button type="button" class="btn btn_green">SEARCH</button>
+              <button type="button" class="btn btn_green subscribe__btn">SEARCH</button>
             </form>
-          </div>
-          <div class="copyright">
-            <p>Copyright © 2019 <a href="#">Hostsight</a>, Designed by <a href="#">themefire</a> Developed by <a
-                href="#">Crumina</a> Only on <a href="#">Envato Market</a></p>
           </div>
         </div>
       </div>
+      <div class="copyright">
+        <p class="copyright__info">Copyright © 2019 <a class="copyright__link" href="#">Hostsight</a>, Designed by <a
+            class="copyright__link" href="#">themefire</a> Developed by <a class="copyright__link" href="#">Crumina</a>
+          Only on <a class="copyright__link" href="#">Envato Market</a></p>
+      </div>
+
+
     </footer>
   </div>
 
@@ -1011,9 +1022,11 @@
         ============================================ -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/adaptive-menu.js"></script>
+  <script src="js/top.js"></script>
   <script src="js/scroll-menu.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/sliders.js"></script>
+
 </body>
 
 </html>

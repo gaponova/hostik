@@ -27,6 +27,8 @@ button {
   padding: 0 15px;
 }
 
+
+
 header {
   position: relative;
   background-position: center 0;
@@ -1990,6 +1992,246 @@ input[id=service-three]:checked ~ .service-three {
 
 .try-btn .btn_blue {
   margin: 0;
+}
+
+/*----------Стили для footer ---------*/
+
+footer {
+  position: relative;
+  background-color: #1b1c1d;
+  color: #fff;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-image: url(../images/header-footer-gradient-bg.jpg);
+  background-size: contain;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.footer-nav {
+  padding: 120px 0 60px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.nav-box {
+  margin: 0 15px;
+  width: calc(25% - 30px);
+}
+
+.nav-box__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hosting-list,
+.domains-list,
+.company-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hosting-list__item,
+.domains-list__item,
+.company-list__item {
+  margin-bottom: 15px;
+}
+
+.hosting-list__link,
+.domains-list__link,
+.company-list__link {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #bac1c9;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hosting-list__link:hover,
+.domains-list__link:hover,
+.company-list__link:hover {
+  color: #6419ff;
+}
+
+.hosting-list__link::after,
+.domains-list__link::after,
+.company-list__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: -20px;
+  width: 4px;
+  height: 6px;
+  border-style: solid;
+  border-width: 3px 0 3px 4px;
+  border-color: transparent transparent transparent #bac1c9;
+  transition: 0.3s ease;
+}
+
+.hosting-list__link:hover::after,
+.domains-list__link:hover::after,
+.company-list__link:hover::after {
+  right: -23px;
+  border-color: transparent transparent transparent #6419ff;
+}
+
+.hostik-info__desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #80868d;
+  margin-bottom: 40px;
+}
+
+.socials-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.socials-list__item {
+  margin: 5px 20px 5px 0;
+  ;
+}
+
+.subscribe {
+  padding: 60px;
+  border-top: 1px solid #323334;
+}
+
+.subscribe-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.subscribe__title {
+  margin: 0 15px;
+  width: calc(25% - 30px);
+}
+
+.subscribe__title h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.subscribe__join {
+  margin: 0 15px;
+  width: calc(25% - 30px);
+  font-size: 16px;
+  color: #80868d;
+}
+
+.subscribe__join span {
+  font-weight: 700;
+}
+
+.subscribe__email {
+  position: relative;
+  margin: 0 15px;
+  width: calc(50% - 30px);
+}
+
+.subscribe__input {
+  border: none;
+  outline: 0;
+  width: 100%;
+  background-color: #2c2f31;
+  color: #838890;
+  padding: 18px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.subscribe__input:focus {
+  background-color: #fff;
+}
+
+.subscribe__input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.subscribe__btn {
+  position: absolute;
+  top: 0;
+  right: -7px;
+  padding: 19px 48px;
+}
+
+.copyright {
+  background-color: #161718;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.copyright__info {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #80868d;
+}
+
+.copyright__link {
+  color: #bac1c9;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.copyright__link:hover {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6419ff;
+}
+
+/*----------Кнопка Наверх----------*/
+
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 99;
+  font-size: 25px;
+  /*background-color: #7d8792;*/
+  color: #bac1c9;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 2px solid #bac1c9;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+#toTop:hover {
+  color: #6419ff;
+  border: 2px solid #6419ff;
 }
 
 
